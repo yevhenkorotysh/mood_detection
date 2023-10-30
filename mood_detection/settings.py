@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "mdvenv.eba-9xpeamqy.us-west-2.elasticbeanstalk.com",
+    "mdvenv.eba-9xpeamqy.us-west-2.elasticbeanstalk.com",
+    "moody-env.eba-3u6gpwmy.us-west-2.elasticbeanstalk.com",
     "production.eba-pmm9w2xj.us-west-2.elasticbeanstalk.com",
     "127.0.0.1",
     "127.0.0.1:8000",
