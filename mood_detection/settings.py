@@ -139,10 +139,11 @@ APPEND_SLASH = True
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR, 'static_files/')
 # ]
-STATIC_ROOT = os.path.join(BASE_DIR, '/static_files')
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+# STATIC_ROOT = BASE_DIR / "static"
 STATIC_URL = '/static/'
 
-print(STATIC_ROOT)
+# print(STATIC_ROOT)
 
 
 MEDIA_URL = '/media/'
