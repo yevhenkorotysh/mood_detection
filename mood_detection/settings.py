@@ -177,3 +177,6 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 # Access key AKIAZURQNYIZEYDOPB7M
 # Secret access key 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
+
+#ebuser-at-662600270386
+#oXkAbUWfsR1TMg3mZJGGdJcedTkvB7cb1MOu4gyC3PU=
