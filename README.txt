@@ -31,13 +31,13 @@ potentially AI model training.
 Both services can be tested using the following links:
 
    **Basic User Interface (Browser):**
-   - [Upload Page](http://mdvenv.eba-9xpeamqy.us-west-2.elasticbeanstalk.com/upload/)
-   - [Audio List](http://mdvenv.eba-9xpeamqy.us-west-2.elasticbeanstalk.com/api/audio_list/)
+   - [Upload Page](http://moody-env.eba-3u6gpwmy.us-west-2.elasticbeanstalk.com/upload/)
+   - [Audio List](http://moody-env.eba-3u6gpwmy.us-west-2.elasticbeanstalk.com/api/audio_list/)
 
    **API (Requires Postman):**
-   - [Audio List](http://mdvenv.eba-9xpeamqy.us-west-2.elasticbeanstalk.com/api/audio_list/)
-   - [Audio Add](http://mdvenv.eba-9xpeamqy.us-west-2.elasticbeanstalk.com/api/audio_add/)
-   - [Audio Details](http://mdvenv.eba-9xpeamqy.us-west-2.elasticbeanstalk.com/api/audio_details/{id}/)
+   - [Audio List](http://moody-env.eba-3u6gpwmy.us-west-2.elasticbeanstalk.com/api/audio_list/)
+   - [Audio Add](http://moody-env.eba-3u6gpwmy.us-west-2.elasticbeanstalk.com/api/audio_add/)
+   - [Audio Details](http://moody-env.eba-3u6gpwmy.us-west-2.elasticbeanstalk.com/api/audio_details/{id}/)
 
 ### Cloud Services
 
@@ -48,7 +48,7 @@ Both services can be tested using the following links:
 ### Project Deployment
 
 This project is deployed on AWS EC2.
-You can test it by following this link: [Mood Detection Service](http://mdvenv.eba-9xpeamqy.us-west-2.elasticbeanstalk.com).
+You can test it by following this link: [Mood Detection Service](http://moody-env.eba-3u6gpwmy.us-west-2.elasticbeanstalk.com).
 
 ### Project Structure
 
