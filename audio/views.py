@@ -2,6 +2,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from .serializers import UploadSerializer
 from django.shortcuts import redirect
+from django.http import HttpResponse
 
 from .api import audio_upload
 
@@ -20,3 +21,8 @@ class UploadViewSet(ViewSet):
         response = response.data
         return Response(response)
 
+
+def readme(request):
+    with open('templates/readme.html', 'r') as f:
+        html = f.read()
+    return HttpResponse(html)

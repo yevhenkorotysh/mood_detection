@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mood Detection Service from Audio Files</title>
+</head>
+<body>
+    <h1>Mood Detection Service from Audio Files</h1>
+
+    <p>This application is aimed at building a Mood Detection Service from audio files, offering two primary services:</p>
+
+    <ol>
+        <li>
+            <strong>Service to Store an Audio File:</strong> This service enables users to upload an audio file, which is then securely stored in a cloud storage system, like AWS S3.
+        </li>
+        <li>
+            <strong>Service to Retrieve Mood:</strong> The second service analyzes the uploaded audio file to determine the mood and returns one of three different moods: Happy, Sad, or Calm. The actual mood determination is not implemented in this project; instead, a random mood generator is used.
+        </li>
+    </ol>
+
+    <h2>Architecture</h2>
+
+    <h3>Language Choice</h3>
+    <p>The service code is implemented with Python/Django due to its extensive libraries and ease of use for audio processing.</p>
+
+    <h3>Components</h3>
+    <p>The architecture of the project involves several key components:</p>
+
+    <ol>
+        <li>
+            <strong>Audio File Storage:</strong> Cloud storage, such as AWS S3, is used to store uploaded audio files. These files should be limited to a maximum duration of 30 seconds and can be in WAV or MP3 format only.
+        </li>
+        <li>
+            <strong>Audio Processing:</strong> To analyze the mood, the uploaded audio file is processed. In this example, a random mood is generated. However, a real implementation would require audio analysis using libraries like Librosa for feature extraction and AI model training.
+        </li>
+        <li>
+            <strong>Developer Console Testing:</strong> Both services can be tested using the following links:
+        </li>
+    </ol>
+
+    <h4>Basic User Interface (Browser):</h4>
+    <ul>
+        <li><a href="http://mdvenv.eba-9xpeamqy.us-west-2.elasticbeanstalk.com/upload/">Upload Page</a></li>
+        <li><a href="http://mdvenv.eba-9xpeamqy.us-west-2.elasticbeanstalk.com/api/audio_list/">Audio List</a></li>
+    </ul>
+
+    <h4>API (Requires Postman):</h4>
+    <ul>
+        <li><a href="http://mdvenv.eba-9xpeamqy.us-west-2.elasticbeanstalk.com/api/audio_list/">Audio List</a></li>
+        <li><a href="http://mdvenv.eba-9xpeamqy.us-west-2.elasticbeanstalk.com/api/audio_add/">Audio Add</a></li>
+        <li><a href="http://mdvenv.eba-9xpeamqy.us-west-2.elasticbeanstalk.com/api/audio_details/{id}/">Audio Details</a></li>
+    </ul>
+
+    <h3>Cloud Services</h3>
+    <p><strong>AWS S3:</strong> AWS S3 – file storage is used to store the audio files securely and efficiently. It can be seamlessly scaled, works fast, and is cost-efficient.</p>
+
+    <p><strong>Database:</strong> The database is hosted on a cloud service, Amazon RDS (Relational Database Service).</p>
+
+    <h3>Project Deployment</h3>
+    <p>This project is deployed on AWS EC2. You can test it by following this link: <a href="http://mdvenv.eba-9xpeamqy.us-west-2.elasticbeanstalk.com">Mood Detection Service</a>.</p>
+
+    <h3>Project Structure</h3>
+    <p>The application design can be found in the <a href="https://docs.google.com/drawings/d/1lz_G_nxaQ3Wu5mwoQipgYEkwpSbnIDoKOrsfcFwUtu4/edit?usp=sharing">Application Design Document</a>. This document explains the architecture, data flow, and components of the application.</p>
+
+    <h3>Git</h3>
+    <p>Code structure can be found in the <a href="https://github.com/yevhenkorotysh/mood_detection.git">GitHub repository</a></p>
+
+
+    <h3>Testing</h3>
+    <p>Unit tests and integration tests for the service code should be provided in the project's <code>tests</code> directory. These tests help ensure the reliability and correctness of the code.</p>
+
+    <h3>Improvements</h3>
+    <p>For potential improvements, consider the following:</p>
+
+    <ul>
+        <li>Close work with Company Data Engineers and Data Scientists for implementing best practices of data collection, ensuring the app collects and stores proper data in proper formats.</li>
+        <li>Implementing a real mood analysis algorithm for more accurate mood detection.</li>
+        <li>Close work with Front-end engineers for enhancing the user interface for a better user experience.</li>
+        <li>Adding support for more audio formats to increase compatibility.</li>
+        <li>Implementing user authentication and authorization for secure file uploads.</li>
+        <li>Adding unit tests</li>
+    </ul>
+
+    <p>For any clarification, sample data, or further questions, please feel free to reach out.</p>
+    <p>Yevhen Korotysh</p>
+    <p>korotysh@gmail.com</p>
+    <p><a href="https://www.linkedin.com/in/korotysh/">www.linkedin.com/in/korotysh/</a></p>
+</body>
+</html>
