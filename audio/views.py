@@ -10,7 +10,10 @@ class UploadViewSet(ViewSet):
     serializer_class = UploadSerializer
 
     def list(self, request):
-        return Response("GET API")
+
+        text = "http://mdvenv.eba-9xpeamqy.us-west-2.elasticbeanstalk.com/api/audio_list/"
+
+        return Response(text)
 
     def create(self, request):
         response = audio_upload(request._request)
